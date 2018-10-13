@@ -1,3 +1,55 @@
+body {
+    /*Gets rid of tiny whitespace on left side of the top bar*/
+    margin:0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #11c482;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar .name-field {
+    /*Name*/
+    margin-left: 40px;
+    float: left;
+    color: #0a509b;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24;
+    padding: 18px;
+}
+
+.navbar .links {
+    /*Put to the links to the right but not all the way*/
+    margin-right: 40px;
+}
+
+.navbar .links a {
+    float: right;
+    color: #ba4c0d;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20;
+    padding: 18px 28px;
+}
+
+.navbar a:hover {
+    background: #9621bc;
+    color: white;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+}
+
 #test{
     color: #0079d3;
+    padding: 16px;
+    margin-top: 50px;
+    height: 1000px; /* Used in this example to enable scrolling */
 }
