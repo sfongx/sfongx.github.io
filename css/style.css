@@ -3,6 +3,15 @@ body {
     margin:0;
 }
 
+img {
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 32px;
+    float: left;
+    margin: 4px 10px;
+    padding: 10px 10px;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #11c482;
@@ -12,7 +21,7 @@ body {
 }
 
 .navbar .name-field {
-    /*Name*/
+    /*Name on the navbar*/
     margin-left: 40px;
     float: left;
     color: #0a509b;
@@ -25,11 +34,12 @@ body {
 }
 
 .navbar .links {
-    /*Put to the links to the right but not all the way*/
+    /*Enclosing links class on navbar*/
     margin-right: 40px;
 }
 
 .navbar .links a {
+    /*Individual links*/
     float: right;
     color: #ba4c0d;
     text-decoration: none;
@@ -41,15 +51,52 @@ body {
 }
 
 .navbar a:hover {
-    background: #9621bc;
-    color: white;
+    /*Hovering over a link on the navbar*/
+    background: #ffcc00;
+    color: #000000;
     transition: 1.5s;
     -webkit-transition: 1.5s;
 }
 
-#test{
-    color: #0079d3;
+#main {
+    /*Enclosing class for the scrolling area*/
     padding: 16px;
     margin-top: 50px;
-    height: 1000px; /* Used in this example to enable scrolling */
+    height: 1000px; /*Must be big anough for scrolling*/
+}
+
+#box {
+    background: #10145b;
+    margin: 60px 90px;
+    padding: 10px ;
+    overflow: auto;
+    border-radius: 18px;
+}
+
+#hi-field {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 28;
+    text-align: center;
+}
+
+#p-unindent {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28;
+    text-align: left;
+    padding: 18px 36px;
+}
+
+#p-indent {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28;
+    text-align: left;
+    text-indent: 50px;
+    padding: 18px 36px;
 }
