@@ -49,7 +49,7 @@ img {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 20;
+    font-size: 18;
     padding: 18px 28px;
 }
 
@@ -65,9 +65,31 @@ img {
 
 /*Enclosing class for the scrolling area. Height
     must be big enough to hold all the boxes*/
+
+/*Narrow smartphone screens*/
+@media screen and (max-width: 399px) {
+    #main{
+        margin-top: 175px;
+    }
+}
+
+/*Wide smartphone screens*/
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    #main{
+        margin-top: 115px;
+    }
+}
+
+/*Tablet and laptop screens*/
+@media screen and (min-width: 501px) {
+    #main {
+        margin-top: 50px;
+    }
+}
+
+/*Apply to all devices*/
 #main {
     padding: 16px;
-    margin-top: 50px;
     height: 1500px;
 }
 
@@ -76,8 +98,8 @@ img {
 /*Yellow colored box*/
 #box-light {
     background: #ffc000;
-    margin: 80px 90px;
-    padding: 10px ;
+    margin: 6% 7%;
+    padding: 10px;
     overflow: auto;
     border-radius: 18px;
 }
@@ -85,7 +107,7 @@ img {
 /*Dark blue colored box*/
 #box-dark {
     background: #10145b;
-    margin: 80px 90px;
+    margin: 6% 7%;
     padding: 10px ;
     overflow: auto;
     border-radius: 18px;
@@ -95,68 +117,73 @@ img {
 
 /*--------Specifications for text inside boxes--------*/
 
+/*Smartphone screens*/
+@media screen and (max-width: 500px) {
+    /*Paragraph title (both colors)*/
+    #p-title-black, #p-title-white {
+        font-size: 18;
+    }
+
+    /*Paragraph body (both colors, indented or unindented)*/
+    #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
+        font-size: 18;        
+    }
+}
+
+/*Tablet and laptop screens*/
+@media screen and (min-width: 501px) {
+    /*Paragraph title (both colors)*/
+    #p-title-black, #p-title-white {
+        font-size: 28;
+    }
+
+    /*Paragraph body (both colors, indented or unindented)*/
+    #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
+        font-size: 28;        
+    }
+}
+
 /*Paragraph title with black text*/
 #p-title-black {
     color: #000000;
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 28;
-    text-align: center;    
 }
 
 /*Paragraph title with white text*/
 #p-title-white {
-    color: #ffffff;
+    color: #ffffff;   
+}
+
+/*Paragraph title (both colors)*/
+#p-title-white, #p-title-black {
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    font-size: 28;
-    text-align: center;    
+    text-align: center; 
 }
 
-/*Indented paragraph with black text*/
-#p-indent-black {
+/*Paragraph body with indented text (both colors)*/
+#p-indent-black, #p-indent-white {
+    text-indent: 50px;
+}
+
+/*Paragraph body with black text*/
+#p-unindent-black, #p-indent-black {
     color: #000000;
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 28;
-    text-align: left;
-    text-indent: 50px;
-    padding: 9px 36px;
 }
 
-/*Unindented paragraph with black text*/
-#p-unindent-black {
-    color: #000000;
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 28;
-    text-align: left;
-    padding: 9px 36px;
-}
-
-/*Indented paragraph with white text*/
-#p-indent-white {
+/*Paragraph body with white text*/
+#p-unindent-white, #p-indent-white {
     color: #ffffff;
-    text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 28;
-    text-align: left;
-    text-indent: 50px;
-    padding: 9px 36px;
 }
 
-/*Unindented paragraph with white text*/
-#p-unindent-white {
-    color: #ffffff;
+/*Paragraph body (both colors, indented or unindented)*/
+#p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 28;
     text-align: left;
-    text-indent: 50px;
-    padding: 9px 36px;
+    padding: 9px 5%;
 }
+
 /*----------------*/
 
 /*------Specifications for subway-like icon indicators------*/
