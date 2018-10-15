@@ -12,6 +12,9 @@ img {
     padding: 10px 10px;
 }
 
+/*----------Top Navbar Specifications----------*/
+
+/*Green bar itself*/
 .navbar {
     overflow: hidden;
     background-color: #11c482;
@@ -20,8 +23,8 @@ img {
     width: 100%;
 }
 
+/*Name on the navbar*/
 .navbar .name-field {
-    /*Name on the navbar*/
     margin-left: 40px;
     float: left;
     color: #0a509b;
@@ -33,13 +36,13 @@ img {
     padding: 18px;
 }
 
-.navbar .links {
-    /*Enclosing links class on navbar*/
+/*Enclosing class for group of all links on navbar*/
+.navbar .links {    
     margin-right: 40px;
 }
 
+/*Individual text for links*/
 .navbar .links a {
-    /*Individual links*/
     float: right;
     color: #ba4c0d;
     text-decoration: none;
@@ -50,53 +53,187 @@ img {
     padding: 18px 28px;
 }
 
+/*Hovering over a link on the navbar*/
 .navbar a:hover {
-    /*Hovering over a link on the navbar*/
-    background: #ffcc00;
+    background: #e7ea4d;
     color: #000000;
     transition: 1.5s;
     -webkit-transition: 1.5s;
 }
 
+/*--------------------*/
+
+/*Enclosing class for the scrolling area. Height
+    must be big enough to hold all the boxes*/
 #main {
-    /*Enclosing class for the scrolling area*/
     padding: 16px;
     margin-top: 50px;
-    height: 1000px; /*Must be big anough for scrolling*/
+    height: 1500px;
 }
 
-#box {
-    background: #10145b;
-    margin: 60px 90px;
+/*--------Specifications for the colored boxes that scroll--------*/
+
+/*Yellow colored box*/
+#box-light {
+    background: #ffc000;
+    margin: 80px 90px;
     padding: 10px ;
     overflow: auto;
     border-radius: 18px;
 }
 
-#hi-field {
+/*Dark blue colored box*/
+#box-dark {
+    background: #10145b;
+    margin: 80px 90px;
+    padding: 10px ;
+    overflow: auto;
+    border-radius: 18px;
+}
+
+/*----------------*/
+
+/*--------Specifications for text inside boxes--------*/
+
+/*Paragraph title with black text*/
+#p-title-black {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 28;
+    text-align: center;    
+}
+
+/*Paragraph title with white text*/
+#p-title-white {
     color: #ffffff;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 28;
-    text-align: center;
+    text-align: center;    
 }
 
-#p-unindent {
-    color: #ffffff;
+/*Indented paragraph with black text*/
+#p-indent-black {
+    color: #000000;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 28;
     text-align: left;
-    padding: 18px 36px;
+    text-indent: 50px;
+    padding: 9px 36px;
 }
 
-#p-indent {
+/*Unindented paragraph with black text*/
+#p-unindent-black {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28;
+    text-align: left;
+    padding: 9px 36px;
+}
+
+/*Indented paragraph with white text*/
+#p-indent-white {
     color: #ffffff;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     font-size: 28;
     text-align: left;
     text-indent: 50px;
-    padding: 18px 36px;
+    padding: 9px 36px;
 }
+
+/*Unindented paragraph with white text*/
+#p-unindent-white {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28;
+    text-align: left;
+    text-indent: 50px;
+    padding: 9px 36px;
+}
+/*----------------*/
+
+/*------Specifications for subway-like icon indicators------*/
+
+#ts-circle {
+    background: #4c80ef;
+    border-radius: 40px;
+    float: left;
+    margin: 4px 5px;
+    padding: 10px 10px;
+    overflow: auto;
+}
+
+#sp-circle {
+    background: #9966ff;
+    border-radius: 40px;
+    float: left;
+    margin: 4px 5px;
+    padding: 10px 10px;
+    overflow: auto;
+}
+
+#osp-circle {
+    background: #ff6600;
+    border-radius: 32px;
+    float: left;
+    margin: 4px 5px;
+    padding: 10px 10px;
+    overflow: auto;
+}
+
+#u-circle {
+    background: #009999;
+    border-radius: 28px;
+    float: left;
+    margin: 4px 5px;
+    padding: 10px 10px;
+    overflow: auto;
+}
+
+#u-circle-text {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 6px;
+}
+
+#icon-text-black {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 1px;
+}
+
+#icon-text-white {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 1px;
+}
+
+#key-text {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14;
+    text-align: left;
+    padding: 14px 18px 6px 2px;
+    float: left;
+}
+
