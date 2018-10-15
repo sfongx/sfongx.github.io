@@ -1,15 +1,6 @@
+/*Gets rid of tiny whitespace on left side of the top bar*/
 body {
-    /*Gets rid of tiny whitespace on left side of the top bar*/
     margin:0;
-}
-
-img {
-    max-width: 25%;
-    max-height: 25%;
-    border-radius: 32px;
-    float: left;
-    margin: 4px 10px;
-    padding: 10px 10px;
 }
 
 /*----------Top Navbar Specifications----------*/
@@ -63,6 +54,18 @@ img {
 
 /*--------------------*/
 
+/*Headshot picture*/
+#headshot{
+    max-width: 25%;
+    max-height: 25%;
+    border-radius: 32px;
+    float: left;
+    margin: 4px 10px;
+    padding: 10px 10px;
+}
+
+/*-------------------*/
+
 /*Enclosing class for the scrolling area. Height
     must be big enough to hold all the boxes*/
 
@@ -92,6 +95,8 @@ img {
     padding: 16px;
     height: 1500px;
 }
+
+/*---------------------*/
 
 /*--------Specifications for the colored boxes that scroll--------*/
 
@@ -188,70 +193,74 @@ img {
 
 /*------Specifications for subway-like icon indicators------*/
 
+/*Blue TS Circle*/
 #ts-circle {
     background: #4c80ef;
     border-radius: 40px;
-    float: left;
-    margin: 4px 5px;
-    padding: 10px 10px;
-    overflow: auto;
 }
 
+/*Purple SP Circle*/
 #sp-circle {
     background: #9966ff;
     border-radius: 40px;
-    float: left;
-    margin: 4px 5px;
-    padding: 10px 10px;
-    overflow: auto;
 }
 
+/*Orange OSP Circle*/
 #osp-circle {
     background: #ff6600;
     border-radius: 32px;
-    float: left;
-    margin: 4px 5px;
-    padding: 10px 10px;
-    overflow: auto;
 }
 
+/*Turquoise U Circle*/
 #u-circle {
     background: #009999;
     border-radius: 28px;
+}
+
+/*Apply to all circles*/
+#ts-circle, #sp-circle, #osp-circle, #u-circle {
     float: left;
     margin: 4px 5px;
     padding: 10px 10px;
     overflow: auto;
 }
 
+/*6px left-right padding for single letter*/
 #u-circle-text {
     color: #000000;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 16;
-    font-weight: bold;
-    text-align: center;
     padding: 2px 6px;
 }
 
+/*2-3 letter 1px left-right padding. Black.*/
 #icon-text-black {
     color: #000000;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 16;
-    font-weight: bold;
-    text-align: center;
     padding: 2px 1px;
 }
 
+/*2-3 letter 1px left-right padding. White.*/
 #icon-text-white {
     color: #ffffff;
+    padding: 2px 1px;
+}
+
+@media screen and (max-width: 500px) {
+    #icon-text-black, #icon-text-white, #u-circle-text {
+        font-size: 11;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #icon-text-black, #icon-text-white, #u-circle-text {
+        font-size: 16;
+    }
+}
+
+/*Apply to all text within icons*/
+#icon-text-black, #icon-text-white, #u-circle-text {
     text-decoration: none;
     font-family: Arial, sans-serif;
-    font-size: 16;
     font-weight: bold;
     text-align: center;
-    padding: 2px 1px;
 }
 
 #key-text {
