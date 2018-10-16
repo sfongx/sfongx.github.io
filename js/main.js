@@ -2,6 +2,7 @@
 
 function screenCheck(){
     var screenWidth = screen.width;
+    alert(screenWidth);
     if (screenWidth <= 500){
         alert(screenWidth);
         var newLineAreas = document.getElementsByClassName("mobile-nline");
