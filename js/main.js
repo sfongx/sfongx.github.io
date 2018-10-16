@@ -2,12 +2,15 @@
 
 function screenCheck(){
     var screenWidth = screen.width;
-    alert(screenWidth);
-    if (screenWidth <= 500){
-        alert(screenWidth);
-        var newLineAreas = document.getElementsByClassName("mobile-nline");
-        for (var i = 0; i < newLineAreas.length; i++){
-            newLineAreas[i].innerHTML = '<br/><br/><br/>';
-        }
+
+    // Phone screens
+    if (screenWidth <= 500) {
+        document.getElementById("mobile-nline1").innerHTML = '<br/><br/><br/>';
     }
+
+    // Tablet screens
+    if (screenWidth >= 501 && screenWidth <= 1000) {
+        document.getElementById("mobile-nline2").innerHTML = '<br/><br/><br/>';
+    }
+
 }
