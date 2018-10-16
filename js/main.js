@@ -5,11 +5,18 @@ function screenCheck(){
 
     // Phone screens
     if (screenWidth <= 500) {
-        document.getElementById("mobile-nline1").innerHTML = '<br/><br/><br/>';
+        // Newline between second and third entries
+        document.getElementById("mobile-nline2").innerHTML = '<br/><br/><br/>';
+        var nline1Group = document.getElementsByClassName("mobile-nline1");
+        for (var i = 0; i < nline1Group.length; i++){
+            nline1Group[i].innerHTML = '<br/><br/><br/>';
+        }
+
     }
 
     // Tablet screens
     if (screenWidth >= 501 && screenWidth <= 1000) {
+        // Only one newline between the second and third entries
         document.getElementById("mobile-nline2").innerHTML = '<br/><br/><br/>';
     }
 
