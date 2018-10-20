@@ -109,13 +109,25 @@ body {
     border-radius: 18px;
 }
 
-/*Dark blue colored box*/
+/*Blue colored box*/
 #box-dark {
-    background: #10145b;
+    /*background: #10145b;*/
+    background: #0a509b;
     margin: 6% 7%;
     padding: 10px ;
     overflow: auto;
     border-radius: 18px;
+}
+
+/*Blue colored box inside yellow colored box*/
+#sub-box-dark {
+    /*background: #10145b;*/
+    background: #0a509b;
+    margin: 2% 2%;
+    padding: 5px;
+    overflow: auto;
+    border-radius: 18px;
+    text-align: center;
 }
 
 /*----------------*/
@@ -124,9 +136,14 @@ body {
 
 /*Smartphone screens*/
 @media screen and (max-width: 500px) {
-    /*Paragraph title (both colors)*/
+    /*Paragraph primary title (both colors)*/
     #p-title-black, #p-title-white {
         font-size: 18;
+    }
+
+    /*Paragraph secondary title (both colors)*/
+    #p-title2-black, #p-title2-white {
+        font-size: 16;
     }
 
     /*Paragraph body (both colors, indented or unindented)*/
@@ -137,9 +154,14 @@ body {
 
 /*Tablet and laptop screens*/
 @media screen and (min-width: 501px) {
-    /*Paragraph title (both colors)*/
+    /*Paragraph primary title (both colors)*/
     #p-title-black, #p-title-white {
-        font-size: 28;
+        font-size: 42;
+    }
+
+    /*Paragraph secondary title (both colors)*/
+    #p-title2-black, #p-title2-white {
+        font-size: 36;
     }
 
     /*Paragraph body (both colors, indented or unindented)*/
@@ -148,23 +170,37 @@ body {
     }
 }
 
+/*----Title Text Specifications----*/
+
 /*Paragraph title with black text*/
-#p-title-black {
+#p-title-black, #p-title2-black {
     color: #000000;
 }
 
 /*Paragraph title with white text*/
-#p-title-white {
+#p-title-white, #p-title2-white {
     color: #ffffff;   
 }
 
-/*Paragraph title (both colors)*/
+/*Paragraph primary title (both colors)*/
 #p-title-white, #p-title-black {
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-align: center; 
 }
+
+/*Paragraph secondary title (both colors)*/
+#p-title2-white, #p-title2-black {
+    text-decoration: none;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: bold;
+    text-align: center; 
+}
+
+/*--------*/
+
+/*----Paragraph body text specifications----*/
 
 /*Paragraph body with indented text (both colors)*/
 #p-indent-black, #p-indent-white {
@@ -184,9 +220,9 @@ body {
 /*Paragraph body (both colors, indented or unindented)*/
 #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     text-align: left;
-    padding: 9px 5%;
+    padding: 9px 3%;
 }
 
 /*----------------*/
@@ -220,7 +256,7 @@ body {
 /*Apply to all circles*/
 #ts-circle, #sp-circle, #osp-circle, #u-circle {
     float: left;
-    margin: 4px 5px;
+    margin: 4px 10px;
     padding: 10px 10px;
     overflow: auto;
 }
@@ -263,13 +299,24 @@ body {
     text-align: center;
 }
 
+/*------------*/
+
+/*Text used to identify which circle corresponds to what*/
 #key-text {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
-    font-family: 'Nunito', sans-serif;
-    font-size: 14;
-    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16;
+    text-align: center;
     padding: 14px 18px 6px 2px;
     float: left;
 }
+
+@media screen and (max-width: 500px) {
+    /*Enclosing class for all the key items*/
+    #key-items {
+        /*display: inline-block;*/
+    }
+}
+
 
