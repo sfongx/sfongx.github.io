@@ -315,7 +315,7 @@ body {
 @media screen and (max-width: 500px) {
     /*Enclosing class for all the key items*/
     #key-items {
-        /*display: inline-block;*/
+        display: inline-block;
     }
 }
 
