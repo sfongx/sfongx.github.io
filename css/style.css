@@ -56,11 +56,29 @@ body {
 /*--------------------*/
 
 /*Headshot picture*/
-#headshot{
+#headshot {
     max-width: 25%;
     max-height: 25%;
     border-radius: 32px;
     float: left;
+    margin: 4px 10px;
+    padding: 10px 10px;
+}
+
+.row {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.phplogo {
+    /* max-width: 225%;
+    max-height: 225%; */
     margin: 4px 10px;
     padding: 10px 10px;
 }
@@ -327,15 +345,10 @@ li {
     border-radius: 50%;
     border: 5px solid black;
     background: white;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     position: relative;
     margin: 50px 0%;
-}
-
-#where {
-    margin-left: 20px;
-    display: flex;
 }
 
 /*Blue connecting line*/
