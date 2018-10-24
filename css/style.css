@@ -344,25 +344,25 @@ li:first-child {
     margin-top: 65px;
 }
 
+/*Pink connecting line*/
+ul.pink li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    border-left: 5px solid #cc2ac9;
+    width: 1px;
+    height: 115px;
+    z-index: -1;
+}
+
 /*Blue connecting line*/
 ul.blue li::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 25%;
-    border-left: 5px solid #0a509b;
-    width: 1px;
-    height: 115px;
-    z-index: -1;
-}
-
-/*Green connecting line*/
-ul.green li::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    border-left: 5px solid green;
+    border-left: 5px solid #1e9dbf;
     width: 1px;
     height: 115px;
     z-index: -1;
@@ -373,14 +373,25 @@ li:last-child:before {
     display: none;
 }
 
-/*Row for each line item*/
+/*Row to hold to columns of "subway line" bullet lists*/
+.line-row {
+    display: flex;
+    align-items: center;
+}
+
+/*Individual column that holds a "subway line"*/
+.line-column {
+    flex: 33.33%;
+}
+
+/*Row for each bullet point that holds multiple items*/
 .row {
     margin-left: 20px;
     display: flex;
     align-items: center;
 }
 
-/*Individual column in each row for */
+/*Individual column in a row for each item (language, marker, etc.)*/
 .column {
     flex: 33.33%;
     padding: 1px;
