@@ -65,22 +65,10 @@ body {
     padding: 10px 10px;
 }
 
-.row {
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.column {
-    flex: 33.33%;
-    padding: 5px;
-}
-
-.phplogo {
-    /* max-width: 225%;
-    max-height: 225%; */
-    margin: 4px 10px;
-    padding: 10px 10px;
+/*Logos for languages*/
+.lang-logo {
+    margin: 4px 5px;
+    border-radius: 10px; /*This only applies to non-svg files*/
 }
 
 /*-------------------*/
@@ -290,7 +278,7 @@ body {
 /*Apply to all circles*/
 #ts-circle, #sp-circle, #osp-circle, #u-circle {
     float: left;
-    margin: 4px 10px;
+    margin: 4px 7px;
     padding: 10px 10px;
     overflow: auto;
 }
@@ -348,7 +336,12 @@ li {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 50px 0%;
+    margin: 90px 0%;
+}
+
+/*For now use this to reduce space between top circle and key box*/
+li:first-child {
+    margin-top: 65px;
 }
 
 /*Blue connecting line*/
@@ -359,7 +352,7 @@ ul.blue li::before {
     left: 25%;
     border-left: 5px solid #0a509b;
     width: 1px;
-    height: 60px;
+    height: 115px;
     z-index: -1;
 }
 
@@ -371,13 +364,26 @@ ul.green li::before {
     left: 25%;
     border-left: 5px solid green;
     width: 1px;
-    height: 60px;
+    height: 115px;
     z-index: -1;
 }
 
 /*Disallows a hanging line after the last circle*/
 li:last-child:before {
     display: none;
+}
+
+/*Row for each line item*/
+.row {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/*Individual column in each row for */
+.column {
+    flex: 33.33%;
+    padding: 1px;
 }
 
 
