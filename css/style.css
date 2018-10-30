@@ -47,8 +47,8 @@ nav .links a {
 
 /*Hovering over a link on the navbar*/
 nav a:hover {
-    background: #e7ea4d;
-    color: #000000;
+    background: #a016ce;
+    color: #ffffff;
     transition: 1.5s;
     -webkit-transition: 1.5s;
 }
@@ -348,9 +348,14 @@ li {
     margin: 90px 0%;
 }
 
-/*For now use this to reduce space between top circle and key box*/
+/*For now target first and last children to reduce space between
+the endpoint "stops" and the box boundaries*/
 li:first-child {
     margin-top: 65px;
+}
+
+li:last-child {
+    margin-bottom: 65px;
 }
 
 /*Pink connecting line*/
@@ -385,7 +390,7 @@ li:last-child:before {
 /*Row to hold to columns of "subway line" bullet lists*/
 .line-row {
     display: flex;
-    align-items: center;
+    align-items: top;
 }
 
 /*Individual column that holds a "subway line"*/

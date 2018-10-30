@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
-    <title>Sherwin Fong's Website</title>
+    <title>Sherwin's Website</title>
 </head>
 <body onload="screenCheck()"> <!--JavaScript to check for desktop vs mobile screens-->
+    <!--Top bar with name and links-->
     <nav>
         <div class="name-field">Sherwin Fong</div>
         <div class="links">
@@ -22,36 +23,42 @@
         </div>
     </nav>
 
+    <!--Main area with scrolling boxes and content-->
     <main>
         <div id="box-light">
             <p id="p-unindent-black">
                 More than this to come "soon".
             </p>
         </div>
+        <!--Blue box with brief-ish bio and headshot picture-->
         <div id="box-dark">
             <p id="p-title-white">Sherwin Fong</p><p id="p-title2-white">Web Developer</p>
             <img src="img/headshot.jpg" id="headshot" alt="My Photo">
             <p id="p-indent-white">
                 I am a December 2017 UMBC alum with an undergraduate degree in Computer Science. I interned
                 with <a href="https://transitscreen.com">TransitScreen</a> between May and August 2018.
-                Currently I am a developer with <a href="https://www.bluestonelogic.com">BlueStone Logic</a>,
+                Currently I am a developer with <a href="https://www.bluestonelogic.com">Bluestone Logic</a>,
                 which began in October 2018.
             </p>
             <p id="p-indent-white">
-                Between my personal projects, a contribution to an open-source project, and industry experience,
-                I have learned a handful of new technologies and frameworks since graduating, including Django,
-                MySQL, React, CakePHP, Angular.js, and PostgreSQL. I have also improved my skills in technologies
-                initially learned during my time at UMBC, including HTML, CSS, Python, PHP, and Github.
+                Between my personal projects, a contribution to an open-source project, and working in industry,
+                I have learned a handful of new technologies and frameworks since graduating including Django,
+                MySQL, React, CakePHP, Angular.js, and PostgreSQL, as well as improved skills in technologies
+                initially learned at UMBC such as HTML, CSS, Python, PHP, and Github. During my time at
+                TransitScreen I learned a lot about working with Agile methodologies and following best coding
+                practices in a professional development environment.
             </p>
             <p id="p-indent-white">
-                As it may have been implied by the company I previously interned with and the design of this site,
-                I have a deep interest in transit. As such, my personal projects revolve around it. See more 
-                about my personal projects (link not implemented yet...).
+                As it may have been implied by the company I previously interned with and the design of this
+                site, I have a deep interest in transit. As such, my personal projects revolve around it.
+                See more about my personal projects (link not implemented yet...).
             </p>
         </div>
+        <!--Yellow box listing technical skills in "subway-line" style-->
         <div id="box-light-bullets">
             <p id="p-title-black">Technical Skills</p>
             <div id="sub-box-dark">
+                <!--Blue box inside yellow box for the "key"-->
                 <p id="p-title2-white">Key:</p>
                 <div id="key-items">
                     <div id="ts-circle">
@@ -73,6 +80,7 @@
                     <div id="key-text"> Used for an open-source project</div>
                 </div>  
             </div>
+            <!--Area below the blue "key" box with the "lines" and "stops" for skills in columns-->
             <div class="line-row">
                 <div class="line-column">
                     <ul class="pink">
@@ -108,7 +116,7 @@
                         <li>
                             <div class="row">
                                 <div class="column">
-                                    <img src="img/postgres-logo.svg" class="lang-logo" alt="cakephp-logo">
+                                    <img src="img/postgres-logo.svg" class="lang-logo" alt="postgres-logo">
                                 </div>
                                 <div class="column">
                                     <div id="ts-circle">
@@ -116,6 +124,18 @@
                                     </div>
                                 </div>   
                             </div>    
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="img/django-logo.svg" class="lang-logo" alt="django-logo">
+                                </div>
+                                <div class="column">
+                                    <div id="sp-circle">
+                                        <div id="icon-text-white">SP</div>
+                                    </div>
+                                </div>  
+                            </div>                                  
                         </li>
                         <li>
                             <div class="row">
@@ -147,6 +167,11 @@
                             </div>
                         </li>                    
                     </ul>
+                    <ul class="pink">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
                 <div class="line-column">
                     <ul class="blue">
@@ -176,12 +201,15 @@
                         </li>
                         <li></li>
                         <li></li>
+                        <li></li>
                         <li></li>                        
                     </ul>                    
                 </div>
             </div>
         </div>
     </main>
+
+    <!--Contact information-->
     <footer>
         
     </footer>
