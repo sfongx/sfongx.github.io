@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <script src="js/main.js"></script>
@@ -7,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <title>Sherwin Fong's Website</title>
 </head>
-<body onload="screenCheck()">
-    <nav class="navbar">
+<body onload="screenCheck()"> <!--JavaScript to check for desktop vs mobile screens-->
+    <nav>
         <div class="name-field">Sherwin Fong</div>
         <div class="links">
             <a href="#contact">Contact</a>
@@ -20,7 +22,7 @@
         </div>
     </nav>
 
-    <div id="main">
+    <main>
         <div id="box-light">
             <p id="p-unindent-black">
                 More than this to come "soon".
@@ -30,21 +32,24 @@
             <p id="p-title-white">Sherwin Fong</p><p id="p-title2-white">Web Developer</p>
             <img src="img/headshot.jpg" id="headshot" alt="My Photo">
             <p id="p-indent-white">
-                I am a December 2017 UMBC alum with an undergraduate degree in Computer Science and a former
-                intern with <a href="https://transitscreen.com">TransitScreen</a> that lasted between May and
-                August 2018. Between my personal projects, a contribution to an open-source project, and my
-                internship, I have learned a handful of new technologies and frameworks since graduating,
-                including Django, MySQL, React, CakePHP, Angular.js, and PostgreSQL. I have also improved
-                my skills in technologies initially learned during my time at UMBC, including HTML, CSS,
-                Python, and Github.
+                I am a December 2017 UMBC alum with an undergraduate degree in Computer Science. I interned
+                with <a href="https://transitscreen.com">TransitScreen</a> between May and August 2018.
+                Currently I am a developer with <a href="https://www.bluestonelogic.com">BlueStone Logic</a>,
+                which began in October 2018.
             </p>
             <p id="p-indent-white">
-                As it may have been implied by the the company I previously interned with, I have a deep
-                interest in transit. As such, my personal projects revolve around it.<br/>
-                See more about my personal projects (link not implemented yet...).
+                Between my personal projects, a contribution to an open-source project, and industry experience,
+                I have learned a handful of new technologies and frameworks since graduating, including Django,
+                MySQL, React, CakePHP, Angular.js, and PostgreSQL. I have also improved my skills in technologies
+                initially learned during my time at UMBC, including HTML, CSS, Python, PHP, and Github.
+            </p>
+            <p id="p-indent-white">
+                As it may have been implied by the company I previously interned with and the design of this site,
+                I have a deep interest in transit. As such, my personal projects revolve around it. See more 
+                about my personal projects (link not implemented yet...).
             </p>
         </div>
-        <div id="box-light">
+        <div id="box-light-bullets">
             <p id="p-title-black">Technical Skills</p>
             <div id="sub-box-dark">
                 <p id="p-title2-white">Key:</p>
@@ -157,7 +162,18 @@
                                 </div>  
                             </div>
                         </li>
-                        <li></li>
+                        <li>
+                            <div class="row">
+                                <div class="column">
+                                    <img src="img/react-logo.svg" class="lang-logo" alt="react-logo">
+                                </div>
+                                <div class="column">
+                                    <div id="sp-circle">
+                                        <div id="icon-text-black">SP</div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
                         <li></li>
                         <li></li>
                         <li></li>                        
@@ -165,6 +181,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
