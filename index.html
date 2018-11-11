@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8"> 
 <html>
 <head>
     <script src="js/main.js"></script>
@@ -10,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
     <title>Sherwin's Website</title>
 </head>
-<body onload="screenCheck()"> <!--JavaScript to check for desktop vs mobile screens-->
+<body onload="screenCheck()" onresize="screenCheck()"> <!--JavaScript to check for desktop vs mobile screens-->
     <!--Top bar with name and links-->
     <nav>
         <div class="name-field">Sherwin Fong</div>
@@ -25,13 +26,13 @@
 
     <!--Main area with scrolling boxes and content-->
     <main>
-        <div id="box-light">
+        <div id="yellow-box">
             <p id="p-unindent-black">
                 More than this to come "soon".
             </p>
         </div>
         <!--Blue box with brief-ish bio and headshot picture-->
-        <div id="box-dark">
+        <div id="blue-box">
             <p id="p-title-white">Sherwin Fong</p><p id="p-title2-white">Web Developer</p>
             <img src="img/headshot.jpg" id="headshot" alt="My Photo">
             <p id="p-indent-white">
@@ -55,25 +56,32 @@
             </p>
         </div>
         <!--Yellow box listing technical skills in "subway-line" style-->
-        <div id="box-light-bullets">
+        <div id="yellow-box-bullets">
             <p id="p-title-black">Technical Skills</p>
             <div id="sub-box-dark">
                 <!--Blue box inside yellow box for the "key"-->
-                <p id="p-title2-white">Key:</p>
+                <p id="p-title2-black">Key:</p>
                 <div id="key-items">
+                    <div id="bl-circle">
+                            <div id="icon-text-white">BL</div>
+                    </div>
+                    <div id="key-text"> Used at Bluestone Logic</div>
+                    <div id="responsive-nline1"></div>
                     <div id="ts-circle">
                         <div id="icon-text-white">TS</div>
                     </div>
                     <div id="key-text"> Used at TransitScreen</div>
+                    <div id="responsive-nline2"></div>
                     <div id="sp-circle">
                         <div id="icon-text-black">SP</div>
                     </div>
                     <div id="key-text"> Used for a personal side project</div>
+                    <div id="responsive-nline3"></div>
                     <div id="u-circle">
                         <div id="u-circle-text">U</div>
                     </div>
                     <div id="key-text"> Used academically</div>
-                    <div id="mobile-nline1"></div>
+                    <div id="responsive-nline4"></div>
                     <div id="osp-circle">
                         <div id="icon-text-white">OSP</div>
                     </div>
@@ -131,6 +139,11 @@
                                     <img src="img/django-logo.svg" class="lang-logo" alt="django-logo">
                                 </div>
                                 <div class="column">
+                                    <div id="bl-circle">
+                                        <div id="icon-text-white">BL</div>
+                                    </div>
+                                </div>
+                                <div class="column">
                                     <div id="sp-circle">
                                         <div id="icon-text-white">SP</div>
                                     </div>
@@ -143,6 +156,11 @@
                                     <img src="img/python-logo.svg" class="lang-logo" alt="python-logo">
                                 </div>
                                 <div class="column">
+                                    <div id="bl-circle">
+                                        <div id="icon-text-white">BL</div>
+                                    </div>
+                                </div>
+                                <div class="column">
                                     <div id="sp-circle">
                                         <div id="icon-text-white">SP</div>
                                     </div>
@@ -151,7 +169,7 @@
                                     <div id="u-circle">
                                         <div id="u-circle-text">U</div>
                                     </div>
-                                </div>  
+                                </div>
                             </div>                    
                         </li>
                         <li>
@@ -160,17 +178,17 @@
                                     <img src="img/mysql-logo.svg" class="lang-logo" alt="mysql-logo">
                                 </div>
                                 <div class="column">
+                                    <div id="bl-circle">
+                                        <div id="icon-text-white">BL</div>
+                                    </div>
+                                </div>
+                                <div class="column">
                                     <div id="sp-circle">
                                         <div id="icon-text-white">SP</div>
                                     </div>
                                 </div>  
                             </div>
                         </li>                    
-                    </ul>
-                    <ul class="pink">
-                        <li></li>
-                        <li></li>
-                        <li></li>
                     </ul>
                 </div>
                 <div class="line-column">
@@ -193,10 +211,15 @@
                                     <img src="img/react-logo.svg" class="lang-logo" alt="react-logo">
                                 </div>
                                 <div class="column">
-                                    <div id="sp-circle">
-                                        <div id="icon-text-black">SP</div>
+                                    <div id="bl-circle">
+                                        <div id="icon-text-white">BL</div>                                    
                                     </div>
-                                </div>  
+                                </div>
+                                <div class="column">
+                                    <div id="osp-circle">
+                                        <div id="icon-text-white">OSP</div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li></li>
@@ -205,13 +228,20 @@
                         <li></li>                        
                     </ul>                    
                 </div>
+                <div class="line-column">
+                    <ul class="pink">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
 
     <!--Contact information-->
     <footer>
-        
+        hello
     </footer>
 </body>
 </html>
