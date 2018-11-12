@@ -1,6 +1,11 @@
-/*Gets rid of tiny whitespace on left side of the top bar*/
 body {
-    margin:0;
+    /*Gets rid of tiny whitespace on left side of the top bar*/
+    margin: 0;
+
+    /*Inserts the background image (still working on it)*/
+    /* background-image: url("../img/acelaposter.jpg");
+    background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
 }
 
 /*----------Top Navbar Specifications----------*/
@@ -73,7 +78,7 @@ nav a:hover {
 
 /*-------------------*/
 
-/*Enclosing class for the scrolling area. Height
+/*Enclosing main class for the scrolling area. Height
     must be big enough to hold all the boxes*/
 
 /*Narrow smartphone screens*/
@@ -100,7 +105,12 @@ nav a:hover {
 /*Apply to all devices*/
 main {
     padding: 16px;
-    height: 2500px;
+    height: 3000px;
+}
+
+footer {
+    height: 250px;
+    background: #bcbaba;
 }
 
 /*---------------------*/
@@ -261,7 +271,6 @@ p a {
 }
 
 /*Blue BL Circle*/
-
 #bl-circle {
     background: #042945;
     border-radius: 40px;
@@ -270,7 +279,6 @@ p a {
 /*Blue TS Circle*/
 #ts-circle {
     background: #57b231;
-    /* background: #8df363; */
     border-radius: 40px;
 }
 
