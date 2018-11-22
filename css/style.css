@@ -169,7 +169,7 @@ footer {
 
     /* Paragraph body (both colors, indented or unindented) */
     #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
-        font-size: 16px;        
+        font-size: 12px;        
     }
 }
 
