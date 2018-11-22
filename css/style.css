@@ -66,8 +66,8 @@ nav a:hover {
     max-height: 25%;
     border-radius: 32px;
     float: left;
-    margin: 4px 10px;
-    padding: 10px 10px;
+    margin: 8px 30px;
+    padding-right: 10px;
 }
 
 /*Logos for languages*/
@@ -173,7 +173,7 @@ footer {
 
     /* Paragraph body (both colors, indented or unindented) */
     #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
-        font-size: 12px;        
+        font-size: 14px;        
     }
 }
 
@@ -245,7 +245,9 @@ footer {
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
     text-align: left;
-    padding: 9px 3%;
+    /* padding: 9px 3%; */
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /* Make link text white in paragraphs */
@@ -265,7 +267,8 @@ p a {
     min-width: 320px;
     max-width: 320px;
     flex: 20%;
-    margin-top: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
 }
 
 /* Smartphone screen-specific font size*/
