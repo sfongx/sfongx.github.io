@@ -255,7 +255,7 @@ p a {
 
 #key-items-col {
     min-width: 300px;
-    max-width: 325px;
+    max-width: 300px;
     flex: 20%;
     margin-top: 5px;
 }
