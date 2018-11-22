@@ -155,25 +155,25 @@ footer {
 
 /*--------Specifications for text inside boxes--------*/
 
-/*Smartphone screen-specific*/
+/* Smartphone screen-specific font sizes*/
 @media screen and (max-width: 500px) {
-    /*Paragraph primary title (both colors)*/
+    /* Paragraph primary title (both colors) */
     #p-title-black, #p-title-white {
-        font-size: 18px;
+        font-size: 24px;
     }
 
-    /*Paragraph secondary title (both colors)*/
+    /* Paragraph secondary title (both colors) */
     #p-title2-black, #p-title2-white {
-        font-size: 16px;
+        font-size: 20px;
     }
 
-    /*Paragraph body (both colors, indented or unindented)*/
+    /* Paragraph body (both colors, indented or unindented) */
     #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
-        font-size: 18px;        
+        font-size: 16px;        
     }
 }
 
-/*Tablet and laptop screen-specific*/
+/* Tablet and laptop screen-specific font sizes*/
 @media screen and (min-width: 501px) {
     /*Paragraph primary title (both colors)*/
     #p-title-black, #p-title-white {
@@ -191,19 +191,17 @@ footer {
     }
 }
 
-/*----Title Text Specifications----*/
-
-/*Paragraph title with black text*/
+/* Paragraph title with black text */
 #p-title-black, #p-title2-black {
     color: #000000;
 }
 
-/*Paragraph title with white text*/
+/* Paragraph title with white text */
 #p-title-white, #p-title2-white {
     color: #ffffff;   
 }
 
-/*Paragraph primary title (both colors)*/
+/* Paragraph primary title (both colors) */
 #p-title-white, #p-title-black {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
@@ -211,7 +209,7 @@ footer {
     text-align: center; 
 }
 
-/*Paragraph secondary title (both colors)*/
+/* Paragraph secondary title (both colors) */
 #p-title2-white, #p-title2-black {
     text-decoration: none;
     font-family: 'Inconsolata', sans-serif;
@@ -219,26 +217,22 @@ footer {
     text-align: center; 
 }
 
-/*--------*/
-
-/*----Paragraph body text specifications----*/
-
-/*Paragraph body with indented text (both colors)*/
+/* Paragraph body with indented text (both colors) */
 #p-indent-black, #p-indent-white {
     text-indent: 50px;
 }
 
-/*Paragraph body with black text*/
+/* Paragraph body with black text */
 #p-unindent-black, #p-indent-black {
     color: #000000;
 }
 
-/*Paragraph body with white text*/
+/* Paragraph body with white text */
 #p-unindent-white, #p-indent-white {
     color: #ffffff;
 }
 
-/*Paragraph body (both colors, indented or unindented)*/
+/* Paragraph body (both colors, indented or unindented) */
 #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
@@ -246,7 +240,7 @@ footer {
     padding: 9px 3%;
 }
 
-/*Make link text white in paragraphs*/
+/* Make link text white in paragraphs */
 p a {
     color: #ffffff;
 }
@@ -261,7 +255,7 @@ p a {
 
 #key-items-col {
     min-width: 250px;
-    max-width: 300px;
+    max-width: 325px;
     flex: 20%;
     margin-top: 5px;
 }
