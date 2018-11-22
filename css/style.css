@@ -165,6 +165,8 @@ footer {
     /* Paragraph secondary title (both colors) */
     #p-title2-black, #p-title2-white {
         font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     /* Paragraph body (both colors, indented or unindented) */
@@ -175,17 +177,19 @@ footer {
 
 /* Tablet and laptop screen-specific font sizes*/
 @media screen and (min-width: 501px) {
-    /*Paragraph primary title (both colors)*/
+    /* Paragraph primary title (both colors) */
     #p-title-black, #p-title-white {
         font-size: 42px;
     }
 
-    /*Paragraph secondary title (both colors)*/
+    /* Paragraph secondary title (both colors) */
     #p-title2-black, #p-title2-white {
         font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    /*Paragraph body (both colors, indented or unindented)*/
+    /* Paragraph body (both colors, indented or unindented) */
     #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
         font-size: 28px;        
     }
@@ -257,7 +261,7 @@ p a {
     min-width: 300px;
     max-width: 300px;
     flex: 20%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 /* Smartphone screen-specific font size*/
