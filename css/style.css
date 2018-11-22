@@ -29,7 +29,7 @@ nav .name-field {
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     padding: 18px;
 }
 
@@ -46,7 +46,7 @@ nav .links a {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     padding: 18px 28px;
 }
 
@@ -78,25 +78,25 @@ nav a:hover {
 
 /*-------------------*/
 
-/*Enclosing main class for the scrolling area. Height
-    must be big enough to hold all the boxes*/
+/*Enclosing main class for the scrolling area. Media queries for
+    its start below the navbar*/
 
-/*Narrow smartphone screens*/
+/*Very narrow size*/
 @media screen and (max-width: 399px) {
     main {
         margin-top: 175px;
     }
 }
 
-/*Wide smartphone screens*/
-@media screen and (min-width: 400px) and (max-width: 749px) {
+/*Narrow size*/
+@media screen and (min-width: 400px) and (max-width: 849px) {
     main {
         margin-top: 115px;
     }
 }
 
-/*Tablet and laptop screens*/
-@media screen and (min-width: 750px) {
+/*Large/default size*/
+@media screen and (min-width: 850px) {
     main {
         margin-top: 50px;
     }
@@ -251,55 +251,66 @@ p a {
     color: #ffffff;
 }
 
-/*----------------*/
-
 /*------Specifications for subway-like icon indicators------*/
 
-/*Smartphone screen-specific*/
+/* Row and column for the circles and text in the key box */
+#key-items-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#key-items-col {
+    min-width: 250px;
+    max-width: 300px;
+    flex: 20%;
+    margin-top: 5px;
+}
+
+/* Smartphone screen-specific font size*/
 @media screen and (max-width: 500px) {
     #icon-text-black, #icon-text-white, #u-circle-text {
         font-size: 11px;
     }
 }
 
-/*Tablet and laptop screen-specific*/
+/* Tablet and laptop screen-specific font size*/
 @media screen and (min-width: 501px) {
     #icon-text-black, #icon-text-white, #u-circle-text {
         font-size: 16px;
     }
 }
 
-/*Blue BL Circle*/
+/* Blue BL Circle */
 #bl-circle {
     background: #042945;
     border-radius: 40px;
 }
 
-/*Blue TS Circle*/
+/* Blue TS Circle */
 #ts-circle {
     background: #57b231;
     border-radius: 40px;
 }
 
-/*Purple SP Circle*/
+/* Purple SP Circle */
 #sp-circle {
     background: #9966ff;
     border-radius: 40px;
 }
 
-/*Orange OSP Circle*/
+/* Orange OSP Circle */
 #osp-circle {
     background: #ff6600;
     border-radius: 32px;
 }
 
-/*Turquoise U Circle*/
+/* Turquoise U Circle */
 #u-circle {
     background: #009999;
     border-radius: 28px;
 }
 
-/*Apply to all circles*/
+/* Apply to all circles */
 #ts-circle, #sp-circle, #osp-circle, #u-circle, #bl-circle {
     float: left;
     margin: 4px 7px;
@@ -307,25 +318,25 @@ p a {
     overflow: auto;
 }
 
-/*6px left-right padding for single letter*/
+/* 6px left-right padding for single letter */
 #u-circle-text {
     color: #000000;
     padding: 2px 6px;
 }
 
-/*2-3 letter 1px left-right padding. Black.*/
+/* 2-3 letter 1px left-right padding (black) */
 #icon-text-black {
     color: #000000;
     padding: 2px 1px;
 }
 
-/*2-3 letter 1px left-right padding. White.*/
+/*2-3 letter 1px left-right padding (white)*/
 #icon-text-white {
     color: #ffffff;
     padding: 2px 1px;
 }
 
-/*Apply to all text within icons*/
+/* Apply to all text within icons */
 #icon-text-black, #icon-text-white, #u-circle-text {
     text-decoration: none;
     font-family: Arial, sans-serif;
@@ -333,9 +344,7 @@ p a {
     text-align: center;
 }
 
-/*------------*/
-
-/*Text used to identify which circle corresponds to what*/
+/* Text used to identify which circle corresponds to what */
 #key-text {
     color: #000000;
     text-decoration: none;
@@ -346,11 +355,11 @@ p a {
     float: left;
 }
 
-/*---------*/
+/*-------------*/
 
-/*Subway line-style item list*/
+/*-----------Subway line-style item list-----------*/
 
-/*Circles with black border and white fill*/
+/* "Subway stop" circles with black border and white fill */
 li {
     width: 10px;
     height: 10px;
@@ -373,7 +382,7 @@ li:last-child {
     margin-bottom: 35px;
 }
 
-/*Pink connecting line*/
+/* Pink connecting line */
 ul.pink li::before {
     content: '';
     position: absolute;
@@ -385,7 +394,7 @@ ul.pink li::before {
     z-index: -1;
 }
 
-/*Blue connecting line*/
+/* Blue connecting line */
 ul.blue li::before {
     content: '';
     position: absolute;
@@ -397,34 +406,34 @@ ul.blue li::before {
     z-index: -1;
 }
 
-/*Disallows a hanging line after the last circle*/
+/* Disallows a hanging line after the last circle */
 li:last-child:before {
     display: none;
 }
 
-/*Row to hold to columns of "subway line" bullet lists*/
+/* Row to hold to columns of "subway line" bullet lists */
 .line-row {
     display: flex;
     flex-wrap: wrap;
     align-items: top;
 }
 
-/*Individual column that holds a "subway line"*/
-.line-column {
+/* Individual column that holds a "subway line" */
+.line-col {
     /* flex: 33.33%; */
     min-width: 460px;
     flex: 33.33%;
 }
 
-/*Row for each bullet point that holds multiple items*/
+/* Row for each "stop" (bullet point) that holds multiple items */
 .row {
     margin-left: 20px;
     display: flex;
     align-items: center;
 }
 
-/*Individual column in a row for each item (language, marker, etc.)*/
-.column {
+/* Individual column in a row for each item (language, circle, etc.) */
+.col {
     flex: 33.33%;
     padding: 1px;
 }
