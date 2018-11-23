@@ -66,8 +66,7 @@ nav a:hover {
     max-height: 25%;
     border-radius: 32px;
     float: left;
-    margin: 8px 30px;
-    padding-right: 10px;
+    margin: 8px 40px 8px 30px;
 }
 
 /*Logos for languages*/
@@ -380,11 +379,11 @@ li {
 /*For now target first and last children to reduce space between
 the endpoint "stops" and the box boundaries*/
 li:first-child {
-    margin-top: 35px;
+    margin-top: 60px;
 }
 
 li:last-child {
-    margin-bottom: 35px;
+    margin-bottom: 60px;
 }
 
 /* Pink connecting line */
