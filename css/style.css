@@ -62,8 +62,8 @@ nav a:hover {
 
 /*Headshot picture*/
 #headshot {
-    width: 50vh;
-    height: 50vh;
+    width: 25%;
+    height: 25%;
     border-radius: 32px;
     float: left;
     margin: 8px 40px 8px 30px;
@@ -441,4 +441,27 @@ li:last-child:before {
     padding: 1px;
 }
 
+/* Bullets for job history */
+dl.no-line-bullets {
+    margin-top: 60px;
+}
 
+dl.no-line-bullets dt {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 30px;
+}
+
+dl.no-line-bullets dd {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 90px;
+}

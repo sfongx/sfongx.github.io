@@ -3,7 +3,7 @@
 function screenCheck(){
     var viewportWidth = document.documentElement.clientWidth;
     console.log(viewportWidth);
-    adjustKeyEntries(viewportWidth);
+    // adjustKeyEntries(viewportWidth);
 }
 
 // function adjustLineColuns() {
