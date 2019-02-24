@@ -29,7 +29,7 @@ nav .name-field {
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     padding: 18px;
 }
 
@@ -47,7 +47,8 @@ nav .links a {
     font-weight: bold;
     text-align: center;
     font-size: 22px;
-    padding: 18px 28px;
+    margin-top: 1px;
+    padding: 16px 28px 16px 28px;
 }
 
 /*Hovering over a link on the navbar*/
@@ -256,14 +257,14 @@ p a {
 /*------Specifications for subway-like icon indicators------*/
 
 /* Row and column for the circles and text in the key box */
-#key-items-row {
+.key-items-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-#key-items-col {
-    min-width: 320px;
-    max-width: 320px;
+.key-items-col {
+    min-width: 350px;
+    max-width: 350px;
     flex: 20%;
     margin-top: 7px;
     margin-bottom: 7px;
