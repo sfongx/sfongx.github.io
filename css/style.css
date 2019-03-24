@@ -459,6 +459,11 @@ dl.no-line-bullets dt {
     margin-left: 30px;
 }
 
+/*Override the width or else it will be too narrow*/
+dt p {
+    width: 1000px;
+}
+
 dl.no-line-bullets dd {
     display: flex;
     align-items: center;
@@ -466,3 +471,40 @@ dl.no-line-bullets dd {
     margin-top: 0px;
     margin-left: 90px;
 }
+
+.p-job-title {
+    font-size: 28px;
+    color: #bdb522;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dates {
+    color: #eb6e0e;
+    font-weight: bold;
+
+}
+
+.job-link a {
+    color: #11c482
+}
+
+.p-job-description, .p-job-description-first {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.p-job-description {
+    margin-top: 2px;
+}
+
+.p-job-description-first {
+    margin-top: 32px;
+}
+
+/*font-family: 'Inconsolata', sans-serif;*/
