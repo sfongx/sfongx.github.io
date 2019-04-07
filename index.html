@@ -20,28 +20,28 @@
             <!--<a href="#transit-blog">Transit Blog</a>--> <!--Not yet-->
             <a href="#projects">Projects</a>
             <a href="#resume">Resume</a>
-            <a href="#about">About</a>
+            <a href="#top">About</a>
         </div>
     </nav>
 
     <!--Main area with scrolling boxes and content-->
     <main>
-        <div class="yellow-box">
+        <!-- <div class="yellow-box">
             <p id="p-unindent-black">
                 More than this to come "soon".
             </p>
-        </div>
+        </div> -->
         <!--Blue box with brief-ish bio and headshot picture-->
         <div class="blue-box">
-            <p id="p-title-white">Sherwin Fong</p><p id="p-title2-white">Web Developer</p>
+            <p class="p-title-white">Sherwin Fong</p><p id="p-title2-orange">Web Developer</p>
             <img src="img/headshot.jpg" id="headshot" alt="My Photo">
-            <p id="p-indent-white">
+            <p class="p-indent-white">
                 I am a December 2017 UMBC alum with an undergraduate degree in Computer Science. I interned
                 with <a href="https://transitscreen.com">TransitScreen</a> between May and August 2018.
-                In Octoboer 2018 I began my current position with
+                In October 2018 I began my current position with
                 <a href="https://www.bluestonelogic.com">Bluestone Logic</a>.
             </p>
-            <p id="p-indent-white">
+            <p class="p-indent-white">
                 Between my personal projects and working in industry, I have learned a handful of new
                 technologies and frameworks since graduating, including Django, MySQL, React, CakePHP,
                 Angular.js, and PostgreSQL, as well as improved and expanded skills in technologies initially
@@ -49,7 +49,7 @@
                 I got my first taste of Agile methodologies and best coding practices in a professional
                 development environment.
             </p>
-            <p id="p-indent-white">
+            <p class="p-indent-white">
                 As it may have been implied by the company I previously interned with and the design of this
                 site, I have a deep interest in transit. As such, my personal projects revolve around it.
                 See more about my personal projects (link not implemented yet...).
@@ -57,10 +57,10 @@
         </div>
         <!--Yellow box listing technical skills in "subway-line" style-->
         <div id="yellow-box-bullets">
-            <p id="p-title-black">Technical Skills</p>
+            <p class="p-title-black">Technical Skills</p>
             <div id="gray-sub-box">
                 <!--Gray box inside yellow box for the "key"-->
-                <p id="p-title2-black">Key:</p>
+                <p class="p-title2-black">Key:</p>
                 <div class="key-items-row">
                     <div class="key-items-col">
                         <div id="bl-circle">
@@ -219,6 +219,30 @@
                                     </div>
                                 </div>
                             </div>    
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/webpack-logo.svg" class="lang-logo" alt="webpack-logo">
+                                </div>
+                                <div class="col">
+                                    <div id="bl-circle">
+                                        <div id="icon-text-white">BL</div>                                    
+                                    </div>
+                                </div>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/babel-logo.svg" class="lang-logo" alt="babel-logo">
+                                </div>
+                                <div class="col">
+                                    <div id="bl-circle">
+                                        <div id="icon-text-white">BL</div>                                    
+                                    </div>
+                                </div>
+                            </div>    
                         </li>                        
                     </ul>                    
                 </div>
@@ -236,7 +260,7 @@
                                 </div>
                                 <div class="col">
                                     <div id="sp-circle">
-                                        <div id="icon-text-white">SP</div>
+                                        <div id="icon-text-black">SP</div>
                                     </div>
                                 </div>  
                             </div>    
@@ -253,7 +277,7 @@
                                 </div>
                                 <div class="col">
                                     <div id="sp-circle">
-                                        <div id="icon-text-white">SP</div>
+                                        <div id="icon-text-black">SP</div>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -275,7 +299,7 @@
                                 </div>
                                 <div class="col">
                                     <div id="sp-circle">
-                                        <div id="icon-text-white">SP</div>
+                                        <div id="icon-text-black">SP</div>
                                     </div>
                                 </div>  
                             </div>
@@ -323,17 +347,17 @@
                         </li>               
                     </ul>
                 </div>
-                <div class="line-col">
+                <!-- <div class="line-col">
                     <ul class="blue">
                         <li></li>
                         <li></li>
                         <li></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="blue-box">
-            <p id="p-title-white">Employment History</p>
+            <p class="p-title-white">Employment History</p>
             <dl class="no-line-bullets">
                 <dt>                    
                     <div class="row">
@@ -351,19 +375,20 @@
                 </dd>        
                 <dt>
                     <div class="row">
-                        <p class="p-job-title"><span class="dates">November 2018 - Present:</span> Software Developer, <span class="job-link"><a href="https://www.bluestonelogic.com">Bluestone Logic</a></span></p>
+                        <p class="p-job-title"><span class="dates">October 2018 - Present:</span> Software Developer, <span class="job-link"><a href="https://www.bluestonelogic.com">Bluestone Logic</a></span></p>
                     </div>  
                 </dt>
                 <dd>
-                    <p class="p-job-description-first"> Testing 124</p>
+                    <p class="p-job-description-first">- Building web app under a contract for the U.S. Marine Corps C4 Division using React, Django, and MySQL</p>
                 </dd> 
             </dl>        
         </div>
     </main>
 
     <!--Contact information-->
-    <footer>
-    
+    <footer id="contact">
+        <br />
+        <p class="p-title2-black">Contact Me</p>
     </footer>
 </body>
 </html>

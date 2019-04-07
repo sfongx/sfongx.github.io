@@ -1,11 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /*Gets rid of tiny whitespace on left side of the top bar*/
     margin: 0;
 
     /*Inserts the background image (still working on it)*/
-    /* background-image: url("../img/ygmgzss.jpg");
-    background-attachment: fixed; */
-    /* background-repeat: no-repeat; */
+    background-image: url("../img/subwayBackground.jpg");
+    /* background-size: 75%; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /*----------Top Navbar Specifications----------*/
@@ -108,7 +113,7 @@ main {
 }
 
 footer {
-    height: 250px;
+    height: 300px;
     background: #bcbaba;
 }
 
@@ -135,7 +140,7 @@ footer {
 
 /*Apply to non-sub boxes*/
 .yellow-box, .blue-box, #yellow-box-bullets {
-    margin: 9% 40px;
+    margin: 7% 40px;
     padding: 10px ;
 }
 
@@ -158,21 +163,21 @@ footer {
 /* Smartphone screen-specific font sizes*/
 @media screen and (max-width: 500px) {
     /* Paragraph primary title (both colors) */
-    #p-title-black, #p-title-white {
+    .p-title-black, .p-title-white {
         font-size: 24px;
         margin-top: 9px;
         margin-bottom: 9px;
     }
 
     /* Paragraph secondary title (both colors) */
-    #p-title2-black, #p-title2-white {
+    .p-title2-black, #p-title2-orange {
         font-size: 20px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
     /* Paragraph body (both colors, indented or unindented) */
-    #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
+    #p-unindent-black, #p-indent-black, #p-unindent-white, .p-indent-white {
         font-size: 14px;        
     }
 }
@@ -180,37 +185,42 @@ footer {
 /* Tablet and laptop screen-specific font sizes*/
 @media screen and (min-width: 501px) {
     /* Paragraph primary title (both colors) */
-    #p-title-black, #p-title-white {
+    .p-title-black, .p-title-white {
         font-size: 42px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
 
     /* Paragraph secondary title (both colors) */
-    #p-title2-black, #p-title2-white {
+    .p-title2-black, #p-title2-orange {
         font-size: 36px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
     /* Paragraph body (both colors, indented or unindented) */
-    #p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
+    #p-unindent-black, #p-indent-black, #p-unindent-white, .p-indent-white {
         font-size: 28px;        
     }
 }
 
 /* Paragraph title with black text */
-#p-title-black, #p-title2-black {
+.p-title-black, .p-title2-black {
     color: #000000;
 }
 
 /* Paragraph title with white text */
-#p-title-white, #p-title2-white {
+.p-title-white {
     color: #ffffff;   
 }
 
+/* Paragrph subtitle with orange text*/
+#p-title2-orange {
+    color: #eb6e0e;
+}
+
 /* Paragraph primary title (both colors) */
-#p-title-white, #p-title-black {
+.p-title-white, .p-title-black {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -218,7 +228,7 @@ footer {
 }
 
 /* Paragraph secondary title (both colors) */
-#p-title2-white, #p-title2-black {
+#p-title2-orange, .p-title2-black {
     text-decoration: none;
     font-family: 'Inconsolata', sans-serif;
     font-weight: bold;
@@ -226,7 +236,7 @@ footer {
 }
 
 /* Paragraph body with indented text (both colors) */
-#p-indent-black, #p-indent-white {
+#p-indent-black, .p-indent-white {
     text-indent: 50px;
 }
 
@@ -236,12 +246,12 @@ footer {
 }
 
 /* Paragraph body with white text */
-#p-unindent-white, #p-indent-white {
+#p-unindent-white, .p-indent-white {
     color: #ffffff;
 }
 
 /* Paragraph body (both colors, indented or unindented) */
-#p-unindent-black, #p-indent-black, #p-unindent-white, #p-indent-white {
+#p-unindent-black, #p-indent-black, #p-unindent-white, .p-indent-white {
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
     text-align: left;
