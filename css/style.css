@@ -7,9 +7,16 @@ body {
     margin: 0;
 
     /*Inserts the background image (still working on it)*/
+
+    /* For use when on sfongx.github.io */
     background-image: url("https://raw.githubusercontent.com/sfongx/sfongx.github.io/master/img/subwayBackground.JPG");
-    /* background-size: 75%; */
+
+    /* For use in local testing: */
+    /* background-image: url("../img/subwayBackground.jpg"); */
+
     background-attachment: fixed;
+    background-position: center; 
+    background-size: 110%;
     background-repeat: no-repeat;
 }
 
