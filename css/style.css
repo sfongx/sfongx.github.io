@@ -476,9 +476,17 @@ dl.no-line-bullets dt {
     margin-left: 30px;
 }
 
-/*Override the width or else it will be too narrow*/
-dt p {
-    width: 1000px;
+/* Overrides for the width of the job title and margins separating them from the bullet points */
+@media screen and (min-width: 1080px) {
+    dt p {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    dt p {
+        width: 600px;
+    }
 }
 
 dl.no-line-bullets dd {
@@ -509,20 +517,41 @@ dl.no-line-bullets dd {
     color: #11c482
 }
 
-.p-job-description, .p-job-description-first {
+.p-job-description, .p-job-description-first, .p-job-description-last {
     font-family: 'Inconsolata', sans-serif;
     font-size: 24px;
     color: #ffffff;
-    margin-top: 10px;
     margin-right: 30px;
 }
 
 .p-job-description {
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
-.p-job-description-first {
-    margin-top: 32px;
+@media screen and (min-width: 1080px) {    
+    .p-job-description-first {
+        margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .p-job-description-last {
+        margin-top: 5px;
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .p-job-description-first {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .p-job-description-last {
+        margin-top: 5px;
+        margin-bottom: 96px;
+    }
 }
 
 /*font-family: 'Inconsolata', sans-serif;*/
